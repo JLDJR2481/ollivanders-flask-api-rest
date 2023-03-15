@@ -1,3 +1,4 @@
+from domain.items import AgedBrie
 import pytest
 
 
@@ -18,11 +19,11 @@ def test_updateQuality(brie):
         if test_sell_in > 0:
             test_quality += 1
 
-        elif test_quality < 0:
-            test_quality = 0
-
         elif test_sell_in <= 0:
             test_quality += 2
+
+        if test_quality < 0:
+            test_quality = 0
 
         brie.updateQuality()
         test_sell_in -= 1

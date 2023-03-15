@@ -1,3 +1,4 @@
+from domain.items import Sulfuras
 import pytest
 
 
@@ -13,7 +14,7 @@ def sulfur():
 def test_updateQuality(sulfur):
 
     for i in range(0, 15):
-        surfur.updateQuality()
+        sulfur.updateQuality()
 
         assert sulfur.sell_in == -1
         assert sulfur.quality == 80

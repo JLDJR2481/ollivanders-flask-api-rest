@@ -1,3 +1,4 @@
+from domain.items import Conjured
 import pytest
 
 
@@ -20,7 +21,7 @@ def test_updateQuality(conjured_sword):
         elif test_sell_in >= 0:
             test_quality -= 2
 
-        elif test_quality <= 0:
+        if test_quality <= 0:
             test_quality = 0
 
         conjured_sword.updateQuality()

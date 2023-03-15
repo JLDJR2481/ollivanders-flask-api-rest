@@ -1,3 +1,6 @@
+from domain.items import *
+
+
 dayZero = [
     NormalItem("+5 Dexterity Vest", 10, 20),
     AgedBrie("Aged Brie", 2, 0),

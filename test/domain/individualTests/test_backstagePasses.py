@@ -1,3 +1,4 @@
+from domain.items import Backstage
 import pytest
 
 
@@ -30,7 +31,7 @@ def test_updateQuality(backstage_pass):
         elif test_sell_in <= 0:
             test_quality = 0
 
-        elif test_quality >= 50:
+        if test_quality >= 50:
             test_quality = 50
 
         backstage_pass.updateQuality()
