@@ -4,7 +4,7 @@ import pytest
 
 @pytest.fixture
 def brie():
-    test_brie = AgedBrie("Aged Brie", 2, 0)
+    test_brie = AgedBrie("Aged Brie", 2, -2)
 
     return test_brie
 
@@ -13,7 +13,7 @@ def brie():
 def test_updateQuality(brie):
 
     test_sell_in = 2
-    test_quality = 0
+    test_quality = -2
 
     for i in range(0, 12):
         if test_sell_in > 0:

@@ -4,14 +4,14 @@ import pytest
 
 @pytest.fixture
 def conjured_sword():
-    test_conjured_sword = Conjured("Conjured sword", 20, 40)
+    test_conjured_sword = Conjured("Conjured sword", 18, 40)
 
     return test_conjured_sword
 
 
 @pytest.mark.conjuredItems
 def test_updateQuality(conjured_sword):
-    test_sell_in = 20
+    test_sell_in = 18
     test_quality = 40
 
     for i in range(0, 20):

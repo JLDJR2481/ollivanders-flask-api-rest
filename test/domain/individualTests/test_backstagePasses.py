@@ -17,7 +17,7 @@ def test_updateQuality(backstage_pass):
     test_sell_in = 15
     test_quality = 20
 
-    for i in range(0, 15):
+    for i in range(0, 20):
 
         if test_sell_in > 10:
             test_quality += 1
