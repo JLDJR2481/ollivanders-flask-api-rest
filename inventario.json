@@ -1,0 +1,14 @@
+{
+  "items": [
+    {
+      "name": "espada",
+      "sell_in": 10,
+      "quality": 50
+    },
+    {
+      "name": "escudo",
+      "sell_in": 5,
+      "quality": 30
+    }
+  ]
+}
