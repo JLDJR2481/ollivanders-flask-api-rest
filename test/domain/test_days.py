@@ -19,7 +19,7 @@ dayZero = [
 
 
 dayOne = [
-    NormalItem("+5 Dexterity Vest", 9, 18),
+    NormalItem("+5 Dexterity Vest", 9, 19),
     AgedBrie("Aged Brie", 1, 1),
     NormalItem("Elixir of the Mongoose", 4, 6),
     Sulfuras("Sulfuras, Hand of Ragnaros", 0, 80),
@@ -31,7 +31,7 @@ dayOne = [
 ]
 
 dayTwo = [
-    NormalItem("+5 Dexterity Vest", 8, 16),
+    NormalItem("+5 Dexterity Vest", 8, 18),
     AgedBrie("Aged Brie", 0, 2),
     NormalItem("Elixir of the Mongoose", 3, 5),
     Sulfuras("Sulfuras, Hand of Ragnaros", 0, 80),
@@ -43,7 +43,7 @@ dayTwo = [
 ]
 
 dayFive = [
-    NormalItem("+5 Dexterity Vest", 5, 10),
+    NormalItem("+5 Dexterity Vest", 5, 15),
     AgedBrie("Aged Brie", -3, 8),
     NormalItem("Elixir of the Mongoose", 0, 2),
     Sulfuras("Sulfuras, Hand of Ragnaros", 0, 80),
@@ -55,7 +55,7 @@ dayFive = [
 ]
 
 dayTen = [
-    NormalItem("+5 Dexterity Vest", 0, 0),
+    NormalItem("+5 Dexterity Vest", 0, 10),
     AgedBrie("Aged Brie", -8, 18),
     NormalItem("Elixir of the Mongoose", -5, 0),
     Sulfuras("Sulfuras, Hand of Ragnaros", 0, 80),
