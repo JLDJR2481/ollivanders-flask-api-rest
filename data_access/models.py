@@ -1,8 +1,24 @@
-from mongoengine import Document, StringField, IntField
+from domain.items.normalItem import NormalItem
+from domain.items.agedBrie import AgedBrie
+from domain.items.backstage import Backstage
+from domain.items.conjured import Conjured
+from domain.items.sulfuras import Sulfuras
 
-class Item(Document):
-    id = IntField(required=True)
-    name = StringField(required=True)
-    sell_in = IntField(required=True)
-    quality = IntField(required=True)
-    item_type = StringField(required=True)
+class Item:
+
+    def __init__(self,id, name, sell_in, quality, item_type):
+        self.id = id
+        self.name = name
+        self.sell_in = sell_in
+        self.quality = quality
+        self.item_type = item_type
+
+
+    def updateItem(self):
+
+        item_category = eval(self.item_type)(self.name, self.sell_in, self.quality)
+
+        item_category.updateQuality()
+
+        return {"sell_in": item_category.sell_in, "quality": item_category.quality}
+
