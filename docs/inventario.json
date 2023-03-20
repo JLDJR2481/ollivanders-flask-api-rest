@@ -3,47 +3,56 @@
     {
       "name": "+5 Dexterity Vest",
       "sell_in": 10,
-      "quality": 20
+      "quality": 20,
+      "type": "Normal Item"
     },
     {
       "name": "Aged Brie",
       "sell_in": 1,
-      "quality": -1
+      "quality": -1,
+      "type": "Aged Brie"
     },
     {
       "name": "Elixir of the Mongoose",
       "sell_in": 5,
-      "quality": 7
+      "quality": 7,
+      "type": "Normal Item"
     },
     {
       "name": "Sulfuras, Hand of Ragnaros",
       "sell_in": 0,
-      "quality": 80
+      "quality": 80,
+      "type": "Sulfuras"
     },
     {
       "name": "Sulfuras, Hand of Ragnaros",
       "sell_in": -1,
-      "quality": 80
+      "quality": 80,
+      "type": "Sulfuras"
     },
     {
       "name": "Backstage passes to a TAFKAL80ETC concert",
       "sell_in": 15,
-      "quality": 20
+      "quality": 20,
+      "type": "Backstage"
     },
     {
       "name": "Backstage passes to a TAFKAL80ETC concert",
       "sell_in": 10,
-      "quality": 49
+      "quality": 49,
+      "type": "Backstage"
     },
     {
       "name": "Backstage passes to a TAFKAL80ETC concert",
       "sell_in": 5,
-      "quality": 49
+      "quality": 49,
+      "type": "Backstage"
     },
     {
       "name": "Conjured Mana Cake",
       "sell_in": 3,
-      "quality": 6
+      "quality": 6,
+      "type": "Conjured"
     }
   ]
 }
