@@ -1,4 +1,4 @@
-from domain.items import Conjured
+from domain.items.conjured import Conjured
 import pytest
 
 

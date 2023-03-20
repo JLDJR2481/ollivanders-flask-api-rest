@@ -1,4 +1,8 @@
-from domain.items import *
+from domain.items.normalItem import NormalItem
+from domain.items.agedBrie import AgedBrie
+from domain.items.backstage import Backstage
+from domain.items.sulfuras import Sulfuras
+from domain.items.conjured import Conjured
 
 
 dayZero = [

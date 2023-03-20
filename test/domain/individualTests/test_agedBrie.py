@@ -1,4 +1,4 @@
-from domain.items import AgedBrie
+from domain.items.agedBrie import AgedBrie
 import pytest
 
 

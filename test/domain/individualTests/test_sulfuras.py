@@ -1,4 +1,4 @@
-from domain.items import Sulfuras
+from domain.items.sulfuras import Sulfuras
 import pytest
 
 

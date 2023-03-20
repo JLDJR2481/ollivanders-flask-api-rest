@@ -1,4 +1,4 @@
-from domain.items import Backstage
+from domain.items.backstage import Backstage
 import pytest
 
 
