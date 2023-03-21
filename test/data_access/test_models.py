@@ -1,10 +1,9 @@
 from data_access.models import Item
-from domain.items.normalItem import NormalItem
-from domain.items.agedBrie import AgedBrie
-from domain.items.sulfuras import Sulfuras
-from domain.items.backstage import Backstage
-from domain.items.conjured import Conjured
+
+from domain.items import *
+
 import pytest
+
 
 @pytest.fixture
 def initItems():

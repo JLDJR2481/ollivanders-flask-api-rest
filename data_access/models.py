@@ -16,9 +16,10 @@ class Item:
 
     def updateItem(self):
 
-        item_category = eval(self.item_type)(self.name, self.sell_in, self.quality)
+        item = eval(self.item_type)(self.name, self.sell_in, self.quality)
 
-        item_category.updateQuality()
+        item.updateQuality()
 
-        return {"sell_in": item_category.sell_in, "quality": item_category.quality}
+        return {"sell_in": item.sell_in, "quality": item.quality}
+
 
