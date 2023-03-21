@@ -1,4 +1,4 @@
-from domain.items import NormalItem
+from domain.items.normalItem import NormalItem
 import pytest
 
 

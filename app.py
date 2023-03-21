@@ -8,8 +8,8 @@ app = Flask(__name__)
 CORS(app)
 api = Api(app)
 
-with open('inventario.json', 'r+') as f:
-    inventario = json.load(f)["items"]
+with open('docs/inventario.json', 'r+') as f:
+    inventario = json.load(f)["inventory"]
 
 @app.route('/', methods=['GET'])
 def welcome():
@@ -28,7 +28,7 @@ def get_single_item(name):
                     'Sell_in: ' : item['sell_in'], 
                     'Quality: ' : item['quality']}
         
-    return jsonify({'error': 'No se ha encontrado el item'}), 404
+    return 'El item esperado no se encuentra en el inventario', 404
 
 
 @app.route('/update', methods=['GET'])
@@ -40,7 +40,7 @@ def update_inventario():
     with open('inventario.json', 'w') as f:
         json.dump({'items': inventario}, f, indent=4)
 
-    return jsonify({'Status' : 'Se ha actualizado el inventario correctamente'})
+    return 'Se ha actualizado el inventario correctamente'
 
 @app.route('/update/<name>', methods=['GET'])
 def update_item(name):
@@ -51,9 +51,9 @@ def update_item(name):
             item['quality'] -= 1
             with open('inventario.json', 'w') as f:
                 json.dump({'items': inventario}, f, indent=4)
-            return jsonify({'Status' : 'Se ha actualizado el item llamado ' + name +  ' correctamente'})
+            return 'Se ha actualizado el item llamado {nombre} correctamente'.format(nombre=name)
 
-    return jsonify({'error': 'No se ha encontrado el item'}), 404
+    return 'No se ha encontrado el item que se desea actualizar' , 404
 
 if __name__ == "__main__":
     app.run(host='0.0.0.0', debug=True)

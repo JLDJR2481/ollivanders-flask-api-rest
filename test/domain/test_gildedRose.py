@@ -1,5 +1,5 @@
 import pytest
-from test.test_days import *
+from test.domain.test_days import *
 from domain.gildedRose import *
 
 
