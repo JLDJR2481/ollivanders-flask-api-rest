@@ -3,6 +3,7 @@ from mongoengine import *
 from dotenv import load_dotenv
 import os
 import json
+from data_access.inventarioInicial import inventario_inicial
 
 load_dotenv()
 
@@ -10,14 +11,12 @@ class Database:
     client = MongoClient(os.environ.get("URI"))
     db = client["ollivanders"]
     collection = db["inventario"]
+    inventory = inventario_inicial()
 
 
     @staticmethod
     def initdb():
-        with open('docs/inventario.json') as f:
-            inventario = json.load(f)["inventory"]
-    
-        Database.collection.insert_many(inventario)
+        Database.collection.insert_many(Database.inventory)
 
     @staticmethod
     def createItem(item):
@@ -39,5 +38,9 @@ class Database:
     @staticmethod
     def dropCollection():    
         Database.db.drop_collection("inventario")
+
+    @staticmethod
+    def inventario():
+        return list(Database.collection.find({}))
 
 

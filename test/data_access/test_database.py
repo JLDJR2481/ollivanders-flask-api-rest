@@ -31,6 +31,27 @@ def test_updateItem():
 @pytest.mark.deleteItem
 def test_deleteItem():
     assert Database.deleteItem(1).deleted_count == 1
+
+@pytest.mark.inventario
+def test_inventario():
+    Database.initdb()
+
+    inventario = Database.inventario()
+
+    assert isinstance(inventario, list)
+    assert len(inventario) == 9
+
+    for item in inventario:
+        assert "_id" in item
+        assert "name" in item
+        assert "sell_in" in item
+        assert "quality" in item
+        assert "type" in item
+
+    Database.dropCollection()
+
+    
+
  
 
 
