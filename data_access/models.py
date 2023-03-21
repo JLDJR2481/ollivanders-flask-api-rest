@@ -4,10 +4,11 @@ from domain.items.backstage import Backstage
 from domain.items.conjured import Conjured
 from domain.items.sulfuras import Sulfuras
 
+
 class Item:
 
-    def __init__(self,id, name, sell_in, quality, item_type):
-        self.id = id
+    def __init__(self, _id, name, sell_in, quality, item_type):
+        self._id = _id
         self.name = name
         self.sell_in = sell_in
         self.quality = quality
@@ -21,5 +22,7 @@ class Item:
         item.updateQuality()
 
         return {"sell_in": item.sell_in, "quality": item.quality}
+    
+
 
 
