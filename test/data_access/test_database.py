@@ -46,7 +46,7 @@ def test_inventario():
         assert "name" in item
         assert "sell_in" in item
         assert "quality" in item
-        assert "type" in item
+        assert "item_type" in item
 
     Database.dropCollection()
 
