@@ -41,5 +41,3 @@ class Database:
     @staticmethod
     def inventario():
         return list(Database.collection.find({}))
-
-
