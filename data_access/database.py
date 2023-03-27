@@ -2,7 +2,6 @@ from pymongo import MongoClient
 from mongoengine import *
 from dotenv import load_dotenv
 import os
-import json
 from data_access.inventarioInicial import inventario_inicial
 
 load_dotenv()
