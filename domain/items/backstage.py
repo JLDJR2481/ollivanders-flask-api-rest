@@ -1,7 +1,7 @@
 from domain.items.normalItem import NormalItem
 
-class Backstage(NormalItem):
 
+class Backstage(NormalItem):
     def __init__(self, name, sell_in, quality):
         NormalItem.__init__(self, name, sell_in, quality)
 

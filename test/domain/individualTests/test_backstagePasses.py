@@ -4,21 +4,17 @@ import pytest
 
 @pytest.fixture
 def backstage_pass():
-
-    test_backstage_pass = Backstage(
-        "Backstage passes to a TAFKAL80ETC concert", 15, 20)
+    test_backstage_pass = Backstage("Backstage passes to a TAFKAL80ETC concert", 15, 20)
 
     return test_backstage_pass
 
 
 @pytest.mark.backstagePasses
 def test_updateQuality(backstage_pass):
-
     test_sell_in = 15
     test_quality = 20
 
     for i in range(0, 20):
-
         if test_sell_in > 10:
             test_quality += 1
 

@@ -11,7 +11,6 @@ def brie():
 
 @pytest.mark.agedBrie
 def test_updateQuality(brie):
-
     test_sell_in = 2
     test_quality = -2
 

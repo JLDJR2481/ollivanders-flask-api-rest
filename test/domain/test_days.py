@@ -14,7 +14,7 @@ dayZero = [
     Backstage("Backstage passes to a TAFKAL80ETC concert", 15, 20),
     Backstage("Backstage passes to a TAFKAL80ETC concert", 10, 49),
     Backstage("Backstage passes to a TAFKAL80ETC concert", 5, 49),
-    Conjured("Conjured Mana Cake", 3, 6)
+    Conjured("Conjured Mana Cake", 3, 6),
 ]
 
 
@@ -27,7 +27,7 @@ dayOne = [
     Backstage("Backstage passes to a TAFKAL80ETC concert", 14, 21),
     Backstage("Backstage passes to a TAFKAL80ETC concert", 9, 50),
     Backstage("Backstage passes to a TAFKAL80ETC concert", 4, 50),
-    Conjured("Conjured Mana Cake", 2, 4)
+    Conjured("Conjured Mana Cake", 2, 4),
 ]
 
 dayTwo = [
@@ -39,7 +39,7 @@ dayTwo = [
     Backstage("Backstage passes to a TAFKAL80ETC concert", 13, 22),
     Backstage("Backstage passes to a TAFKAL80ETC concert", 8, 50),
     Backstage("Backstage passes to a TAFKAL80ETC concert", 4, 50),
-    Conjured("Conjured Mana Cake", 1, 2)
+    Conjured("Conjured Mana Cake", 1, 2),
 ]
 
 dayFive = [
@@ -51,7 +51,7 @@ dayFive = [
     Backstage("Backstage passes to a TAFKAL80ETC concert", 10, 25),
     Backstage("Backstage passes to a TAFKAL80ETC concert", 5, 50),
     Backstage("Backstage passes to a TAFKAL80ETC concert", 0, 50),
-    Conjured("Conjured Mana Cake", -2, 0)
+    Conjured("Conjured Mana Cake", -2, 0),
 ]
 
 dayTen = [
@@ -63,7 +63,7 @@ dayTen = [
     Backstage("Backstage passes to a TAFKAL80ETC concert", 5, 35),
     Backstage("Backstage passes to a TAFKAL80ETC concert", 0, 50),
     Backstage("Backstage passes to a TAFKAL80ETC concert", -5, 0),
-    Conjured("Conjured Mana Cake", -7, 0)
+    Conjured("Conjured Mana Cake", -7, 0),
 ]
 
 dayFifteen = [
@@ -75,7 +75,7 @@ dayFifteen = [
     Backstage("Backstage passes to a TAFKAL80ETC concert", 0, 50),
     Backstage("Backstage passes to a TAFKAL80ETC concert", -5, 0),
     Backstage("Backstage passes to a TAFKAL80ETC concert", -10, 0),
-    Conjured("Conjured Mana Cake", -12, 0)
+    Conjured("Conjured Mana Cake", -12, 0),
 ]
 
 dayTwenty = [
@@ -87,7 +87,7 @@ dayTwenty = [
     Backstage("Backstage passes to a TAFKAL80ETC concert", -5, 0),
     Backstage("Backstage passes to a TAFKAL80ETC concert", -10, 0),
     Backstage("Backstage passes to a TAFKAL80ETC concert", -15, 0),
-    Conjured("Conjured Mana Cake", -17, 0)
+    Conjured("Conjured Mana Cake", -17, 0),
 ]
 
 
@@ -100,7 +100,7 @@ dayTwentyfive = [
     Backstage("Backstage passes to a TAFKAL80ETC concert", -10, 0),
     Backstage("Backstage passes to a TAFKAL80ETC concert", -15, 0),
     Backstage("Backstage passes to a TAFKAL80ETC concert", -20, 0),
-    Conjured("Conjured Mana Cake", -22, 0)
+    Conjured("Conjured Mana Cake", -22, 0),
 ]
 
 dayThirty = [
@@ -112,5 +112,5 @@ dayThirty = [
     Backstage("Backstage passes to a TAFKAL80ETC concert", -15, 0),
     Backstage("Backstage passes to a TAFKAL80ETC concert", -20, 0),
     Backstage("Backstage passes to a TAFKAL80ETC concert", -25, 0),
-    Conjured("Conjured Mana Cake", -27, 0)
+    Conjured("Conjured Mana Cake", -27, 0),
 ]

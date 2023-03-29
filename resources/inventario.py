@@ -11,9 +11,9 @@ def get_inventario():
     inventario = Services.inventario()
     return jsonify(inventario), 200
 
-@inventario_bp.route("/inventario/update", methods=['PUT'])
-def updateInventario():
 
+@inventario_bp.route("/inventario/update", methods=["PUT"])
+def updateInventario():
     inventario = Services.inventario()
     for item in inventario:
         item_a_objeto = Item(
@@ -21,11 +21,11 @@ def updateInventario():
             item["name"],
             item["sell_in"],
             item["quality"],
-            item["item_type"]
+            item["item_type"],
         )
 
         # Services.updateItem(id, update_statement)
-        #item_a_objeto.updateItem(). Update de Item
+        # item_a_objeto.updateItem(). Update de Item
         Services.updateItem(item["_id"], item_a_objeto.updateItem())
 
     inventario = Services.inventario()

@@ -4,7 +4,6 @@ import pytest
 
 @pytest.fixture
 def sulfur():
-
     test_sulfuras = Sulfuras("Sulfuras, Hand of Ragnaros", -1, 80)
 
     return test_sulfuras
@@ -12,7 +11,6 @@ def sulfur():
 
 @pytest.mark.sulfuras
 def test_updateQuality(sulfur):
-
     for i in range(0, 15):
         sulfur.updateQuality()
 
