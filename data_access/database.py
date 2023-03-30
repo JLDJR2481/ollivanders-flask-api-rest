@@ -1,5 +1,4 @@
 from pymongo import MongoClient
-from mongoengine import *
 from dotenv import load_dotenv
 import os
 from data_access.inventarioInicial import inventario_inicial

@@ -1,4 +1,4 @@
-from flask import Blueprint, request, abort, jsonify
+from flask import Blueprint, request, jsonify
 from services.services import *
 
 items_blueprint = Blueprint("items", __name__)
