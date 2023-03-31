@@ -12,7 +12,7 @@ def get_inventario():
     return jsonify(inventario), 200
 
 
-@inventario_bp.route("/inventario/update", methods=["PUT"])
+@inventario_bp.route("/inventario/update", methods=["GET"])
 def updateInventario():
     inventario = Services.inventario()
     for item in inventario:

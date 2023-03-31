@@ -22,7 +22,7 @@ def test_welcomeItem(client):
     response = client.get("/items")
     assert response.status_code == 200
     assert response.json == {
-        "Bienvenido a la sección de items!": "Puedes realizar 4 operaciones: \nCrear un item con /create. \nBuscar un item con /find/id. Debes insertar una id. \nUpdatear un item con /update/id. Debes insertar una id. \nBorrar un item de la base de datos con /delete/id. Debes insertar una id."
+        "Bienvenido a la seccion de items!": "Puedes realizar 4 operaciones: Crear un item con /create. Buscar un item con /find/id. Debes insertar una id. Updatear un item con /update/id. Debes insertar una id. Borrar un item de la base de datos con /delete/id. Debes insertar una id."
     }
 
 

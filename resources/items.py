@@ -9,7 +9,7 @@ def welcomeItem():
     return (
         jsonify(
             {
-                "Bienvenido a la sección de items!": "Puedes realizar 4 operaciones: \nCrear un item con /create. \nBuscar un item con /find/id. Debes insertar una id. \nUpdatear un item con /update/id. Debes insertar una id. \nBorrar un item de la base de datos con /delete/id. Debes insertar una id."
+                "Bienvenido a la seccion de items!": "Puedes realizar 4 operaciones: Crear un item con /create. Buscar un item con /find/id. Debes insertar una id. Updatear un item con /update/id. Debes insertar una id. Borrar un item de la base de datos con /delete/id. Debes insertar una id."
             }
         ),
         200,
@@ -51,7 +51,7 @@ def readItem(id):
     if resultado is None:
         return jsonify({"ERROR": "No se ha podido encontrar el item con la id"}), 404
     else:
-        return jsonify({"Aqui tienes el item: ": resultado})
+        return jsonify({"Aqui tienes el item: ": resultado}), 200
 
 
 @items_blueprint.route("/items/update/<id>", methods=["PUT"])

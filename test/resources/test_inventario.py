@@ -35,7 +35,7 @@ def test_get_inventario(client):
 
 @pytest.mark.updateInventarioRes
 def test_update_inventario(client):
-    response = client.put("/inventario/update")
+    response = client.get("/inventario/update")
     item = {
         "_id": 1,
         "name": "+5 Dexterity Vest",
