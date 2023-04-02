@@ -153,6 +153,3 @@ cython_debug/
 
 # VSCode
 .vscode
-
-# IMGS
-docs/imgs
