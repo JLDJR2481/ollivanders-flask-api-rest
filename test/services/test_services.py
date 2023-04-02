@@ -3,8 +3,8 @@ from data_access.database import Database
 from services.services import Services
 import pytest
 
-class TestService(unittest.TestCase):
 
+class TestService(unittest.TestCase):
     def setUp(self):
         Database.initdb()
 
@@ -13,8 +13,13 @@ class TestService(unittest.TestCase):
 
     @pytest.mark.createItemSer
     def test_createItem(self):
-
-        item = {"_id":10, "name": "Item Test name", "sell_in": 10, "quality": 10, "item_type":"NormalItem"}
+        item = {
+            "_id": 10,
+            "name": "Item Test name",
+            "sell_in": 10,
+            "quality": 10,
+            "item_type": "NormalItem",
+        }
 
         result = Services.createItem(item)
         self.assertIsNotNone(result)
@@ -22,18 +27,30 @@ class TestService(unittest.TestCase):
 
     @pytest.mark.readItemSer
     def test_readItem(self):
-        item = {"_id":10, "name": "Item Test name", "sell_in": 10, "quality": 10, "item_type":"NormalItem"}
+        item = {
+            "_id": 10,
+            "name": "Item Test name",
+            "sell_in": 10,
+            "quality": 10,
+            "item_type": "NormalItem",
+        }
         Services.createItem(item)
 
         result = Services.readItem(10)
 
         self.assertIsNotNone(result)
         self.assertEqual(result["_id"], 10)
-        self.assertEqual(result["name"],"Item Test name")
+        self.assertEqual(result["name"], "Item Test name")
 
     @pytest.mark.updateItemSer
     def test_updateItem(self):
-        item = {"_id":10, "name": "Item Test name", "sell_in": 10, "quality": 10, "item_type":"NormalItem"}
+        item = {
+            "_id": 10,
+            "name": "Item Test name",
+            "sell_in": 10,
+            "quality": 10,
+            "item_type": "NormalItem",
+        }
 
         Services.createItem(item)
 
@@ -48,10 +65,15 @@ class TestService(unittest.TestCase):
         self.assertNotEqual(Services.readItem(10)["quality"], old_result["quality"])
         self.assertEqual(Services.readItem(10)["quality"], 20)
 
-
     @pytest.mark.deleteItemSer
     def test_deleteItem(self):
-        item = {"_id": 10, "name": "Item Test name", "sell_in": 10, "quality": 10, "item_type":"NormalItem"}
+        item = {
+            "_id": 10,
+            "name": "Item Test name",
+            "sell_in": 10,
+            "quality": 10,
+            "item_type": "NormalItem",
+        }
 
         Services.createItem(item)
         result = Services.deleteItem(10)
@@ -59,11 +81,16 @@ class TestService(unittest.TestCase):
         self.assertIsNotNone(result)
         self.assertEqual(result.deleted_count, 1)
         self.assertIsNone(Services.readItem(10))
-        
+
     @pytest.mark.inventarioSer
     def test_inventario(self):
-        
-        item = {"_id": 10, "name": "Item Test name", "sell_in": 10, "quality": 10, "item_type":"NormalItem"}
+        item = {
+            "_id": 10,
+            "name": "Item Test name",
+            "sell_in": 10,
+            "quality": 10,
+            "item_type": "NormalItem",
+        }
 
         Services.createItem(item)
         result = Services.inventario()
@@ -72,11 +99,3 @@ class TestService(unittest.TestCase):
         self.assertGreater(len(result), 0)
 
         self.assertIn(item, result)
-        
-
-        
-
-
-
-
-

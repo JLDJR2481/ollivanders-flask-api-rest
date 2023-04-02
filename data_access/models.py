@@ -6,7 +6,6 @@ from domain.items.sulfuras import Sulfuras
 
 
 class Item:
-
     def __init__(self, _id, name, sell_in, quality, item_type):
         self._id = _id
         self.name = name
@@ -14,15 +13,9 @@ class Item:
         self.quality = quality
         self.item_type = item_type
 
-
     def updateItem(self):
-
         item = eval(self.item_type)(self.name, self.sell_in, self.quality)
 
         item.updateQuality()
 
         return {"sell_in": item.sell_in, "quality": item.quality}
-    
-
-
-

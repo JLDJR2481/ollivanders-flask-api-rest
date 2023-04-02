@@ -1,7 +1,7 @@
 from domain.items.normalItem import NormalItem
 
-class AgedBrie(NormalItem):
 
+class AgedBrie(NormalItem):
     def __init__(self, name, sell_in, quality):
         NormalItem.__init__(self, name, sell_in, quality)
 

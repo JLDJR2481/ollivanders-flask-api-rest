@@ -1,17 +1,16 @@
 from pymongo import MongoClient
-from mongoengine import *
 from dotenv import load_dotenv
 import os
 from data_access.inventarioInicial import inventario_inicial
 
 load_dotenv()
 
+
 class Database:
     client = MongoClient(os.environ.get("URI"))
     db = client["ollivanders"]
     collection = db["inventario"]
     inventory = inventario_inicial()
-
 
     @staticmethod
     def initdb():
@@ -28,14 +27,14 @@ class Database:
     # Updated_statement: "key" : "new_value"
     @staticmethod
     def updateItem(id, updated_statement):
-        return Database.collection.update_one({"_id" : id} , {"$set": updated_statement})
-    
-    @staticmethod
-    def deleteItem(id):
-        return Database.collection.delete_one({"_id":id})
+        return Database.collection.update_one({"_id": id}, {"$set": updated_statement})
 
     @staticmethod
-    def dropCollection():    
+    def deleteItem(id):
+        return Database.collection.delete_one({"_id": id})
+
+    @staticmethod
+    def dropCollection():
         Database.db.drop_collection("inventario")
 
     @staticmethod
