@@ -1,0 +1,11 @@
+bandit==1.7.5
+black==23.3.0
+coverage==7.2.2
+FLASK==2.2.3
+Flask-Cors==3.0.10
+Flask-RESTful==0.3.9
+pymongo==4.3.3
+pytest==7.2.2
+python-dotenv==1.0.0
+tox==4.4.8
+
