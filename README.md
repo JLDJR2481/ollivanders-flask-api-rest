@@ -32,7 +32,7 @@ Estos objetos se dividen en 5 tipos, con sus ciertas peculiaridades:
 
 - **Sulfuras**: Estos objetos, considerados legendarios, tienen una calidad fijada en 80 y no caducan nunca.
 
-- **Backstage**: Estos pases cambian totalmente las reglas. Si la fecha para el concierto es superior a 1, se aumenta su calidad +1. Si es superior a 5, será de +2. Si es superior a 0, será de +3. Es decir, en el intervalo entre 10 y 5 (incluido 10) será de +2, y en el de 5 y 0 (incluido 5) será de +3. Si la fecha llega a 0, la calidad se fija a 0, ya que no tiene valor
+- **Backstage**: Estos pases cambian totalmente las reglas. Si la fecha para el concierto es superior a 10, se aumenta su calidad +1. Si es superior a 5, será de +2. Si es superior a 0, será de +3. Es decir, en el intervalo entre 10 y 5 (incluido 10) será de +2, y en el de 5 y 0 (incluido 5) será de +3. Si la fecha llega a 0, la calidad se fija a 0, ya que no tiene valor
 
 - **Aged Brie**: Este tipo de queso tiene una peculiaridad. Su valor va en aumento de 1 en 1 hasta que caduca, momento en el que se aumentará de 2 en 2 hasta 50
 
