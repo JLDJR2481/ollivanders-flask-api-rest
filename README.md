@@ -62,6 +62,7 @@ cd <nombre-directorio>
 
 ```cmd
 python -m venv venv
+source venv/Scripts/activate
 ```
 
 3. Clonar el repositorio
