@@ -33,7 +33,7 @@ setuptools.setup(
         "distlib==0.3.6",
         "dnspython==2.3.0",
         "filelock==3.10.7",
-        "flask==2.2.3",
+        "flask==2.3.2",
         "flask-Cors==3.0.10",
         "flask-restful==0.3.9",
         "gitdb==4.0.10",
