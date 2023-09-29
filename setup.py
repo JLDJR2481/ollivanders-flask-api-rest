@@ -50,7 +50,7 @@ setuptools.setup(
         "pbr==5.11.1",
         "platformdirs==3.2.0",
         "pluggy==1.0.0",
-        "pygments==2.14.0",
+        "pygments==2.15.0",
         "pymongo==4.3.3",
         "pyproject_api==1.5.1",
         "pytest==7.2.2",
