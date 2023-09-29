@@ -37,7 +37,7 @@ setuptools.setup(
         "flask-Cors==3.0.10",
         "flask-restful==0.3.9",
         "gitdb==4.0.10",
-        "gitpython==3.1.31",
+        "gitpython==3.1.35",
         "iniconfig==2.0.0",
         "itsdangerous==2.1.2",
         "jinja2==3.1.2",
